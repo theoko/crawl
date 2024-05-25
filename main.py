@@ -4,7 +4,7 @@ import json
 from elasticsearch import Elasticsearch
 
 # Define the URL to crawl
-url = "https://finviz.com/insidertrading.ashx?tc=1"
+url = "https://finviz.com/insidertrading.ashx?or=-10&tv=100000&tc=1&o=-transactionValue"
 
 # Send a GET request to the URL
 headers = {
@@ -73,8 +73,11 @@ if response.status_code == 200:
                 # Add the stock data to the list
                 data.append(stock_data)
 
-    # Print the extracted data
-    # for info in data:        
+    # Sort by dollar_value
+    data.sort(key=lambda x: int(x["dollar_value"].replace(",", "")), reverse=True)
+    # Print the sorted data
+    # print("Sorted by dollar_value:")
+    # for info in data:
     #     print(info)
 
     # Store the entire HTML content (tags from begginning to end) into a JSON object
@@ -95,6 +98,25 @@ if response.status_code == 200:
     # # Confirm successful indexing
     # print("Data indexed into Elasticsearch.")
 
+    # Get those which have a dollar_value greater than 1,000,000
+    data_1m = []
+    print("Transactions with dollar_value greater than 1,000,000:")
+    for info in data:
+        if int(info["dollar_value"].replace(",", "")) > 1000000:
+            print(info)
+            data_1m.append(info)
+    
+    # Check https://finance.yahoo.com/quote/ALLO/options for each symbol in data_1m
+    # for info in data_1m:
+    #     url_yahoo = "https://finance.yahoo.com/quote/" + info["symbol"] + "/options"
+    #     response_yahoo = requests.get(url_yahoo, headers=headers)
+    #     if response_yahoo.status_code == 200:
+    #         soup_yahoo = BeautifulSoup(response_yahoo.content, "html.parser")
+    #         json_data_yahoo = json.dumps(soup_yahoo.prettify())
+            
+    #     else:
+    #         print("Failed to retrieve data from Yahoo Finance. Status code:", response_yahoo.status_code)
+
 else:
     print("Failed to retrieve data. Status code:", response.status_code)
 
@@ -110,7 +132,6 @@ if response_capitoltrades.status_code == 200:
     issuer_tickers_list = []
     for issuer_ticker in issuer_tickers:
         issuer_tickers_list.append(issuer_ticker.text)
-        print(issuer_ticker.text)
 
     # print(json_data_capitoltrades)
 
@@ -119,6 +140,45 @@ if response_capitoltrades.status_code == 200:
     tx_dates_list = []
     for tx_date in tx_dates:
         tx_dates_list.append(tx_date.text)
-        print(tx_date.text)
+        # print(tx_date.text)
+    
+    # Associate issuers_tickers_list with tx_dates_list
+    data_capitoltrades = []
+    for i in range(len(issuer_tickers_list)):
+        data_capitoltrades.append({"symbol": issuer_tickers_list[i], "date": tx_dates_list[i]})
+
+    # If it ends with ":US", it's a US stock, add it to the final list as "FLJP" for example (without ":US")
+    data_capitoltrades_us = []
+    for info in data_capitoltrades:
+        if info["symbol"].endswith(":US"):
+            info["symbol"] = info["symbol"][:-3]
+            data_capitoltrades_us.append(info)
+
+    print(data_capitoltrades_us)
+
+    # Check if the symbol is in the data_1m list
+    print("Transactions with dollar_value greater than 1,000,000:")
+    for info in data_1m:
+        for info_capitol in data_capitoltrades_us:
+            if info["symbol"] == info_capitol["symbol"]:
+                print(info)
+                print(info_capitol)
+
+    # Store the data in data_1m and data_capitoltrades_us in Elasticsearch to later check if the same symbol appears in both
+    # Connect to Elasticsearch
+    es = Elasticsearch()
+
+    # Index the extracted data into Elasticsearch
+    for info in data_1m:
+        # Convert the dictionary to JSON
+        json_data = json.dumps(info)
+        # Index the JSON data into Elasticsearch
+        es.index(index='stock_data_insiders', body=json_data)
+
+    for info in data_capitoltrades_us:
+        # Convert the dictionary to JSON
+        json_data = json.dumps(info)
+        # Index the JSON data into Elasticsearch
+        es.index(index='stock_data_politicians', body=json_data)
 else:
     print("Failed to retrieve data from CapitolTrades. Status code:", response_capitoltrades.status_code)
