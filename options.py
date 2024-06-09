@@ -41,6 +41,8 @@ url = "https://www.barchart.com/options/naked-puts?orderBy=potentialReturn&order
 # Navigate to the URL
 driver.get(url)
 
+print(driver.page_source)
+
 # Wait for a specific element to ensure the page has loaded
 # Adjust the selector as needed for your target element
 WebDriverWait(driver, 10).until(
