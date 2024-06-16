@@ -1,0 +1,469 @@
+
+    <div class="_grid_groups"><div class="_header _header_group _hide"><div class="_header_group_cell _align_center"></div></div></div><div id="_grid" class="_grid" part="grid" tabindex="0" role="presentation" noselectablecolumns=""><div class="_header _grid_columns _sticky_main_header" role="row"><div class="_header_cell" role="columnheader"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="">
+                
+            </div>
+        </div></div><div class="_header_cell" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The underlying equity.">
+                Symbol
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The last price of the underlying equity.">
+                Price~
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The price at which the holder of an options can buy (in the case of a call option) or sell (in the case of a put option) the underlying security when the option is exercised.">
+                Strike
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The relative position of the last (underlying) price to the strike price.">
+                Moneyness
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The option expiration date.">
+                Exp Date
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The bid price for the options contract.">
+                Bid
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="Break Even = Strike Price - Bid">
+                BE (Bid)
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="Break Even % = ((stock price - strike value + bid) / (strike value - bid)) * 100.0">
+                BE%
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The total number of shares or contracts traded for the day.">
+                Volume
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The total number of open contracts for the previous day that have been traded but not yet liquidated via offsetting trades.">
+                Open Int
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="Implied Volatility is the estimated volatility of the option strike over the period of the option.">
+                IV
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="Measures the sensitivity of an option's theoretical value to a change in the price of the underlying asset. ">
+                Delta
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header bc-datatable-sorted">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The potential return for the strategy. View the page help for more information and calculation.">
+                Ptnl Rtn
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" slot="__content"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The annualized percent of potential return (potential return / days held * 365) where days held is the number of days remaining until expiration.">
+                Ann Rtn
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_right" role="columnheader"><span class="_sortable-cell" style="display: inline-flex;"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="The trade time.">
+                Last Trade
+            </div>
+        <if-binding binding="this.sort.active" class="grid-sort-icon-wrapper">
+            <switch-binding slot="on-true" binding="this.sort.direction">
+                <template id="_default">
+                    <div class="grid-sort-icon-size-preserver" part="sort-default"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </template>
+                <template id="asc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 402.286c0 20-16.571 36.571-36.571 36.571h-512c-20 0-36.571-16.571-36.571-36.571 0-9.714 4-18.857 10.857-25.714l256-256c6.857-6.857 16-10.857 25.714-10.857s18.857 4 25.714 10.857l256 256c6.857 6.857 10.857 16 10.857 25.714z"></path>
+                    </svg>
+                </template>
+                <template id="desc">
+                    <div class="grid-sort-icon-size-preserver"></div>
+                    <svg class="grid-sort-icon" viewBox="0 0 585.143 1024">
+                        <path d="M585.143 621.714c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"></path>
+                    </svg>
+                </template>
+            
+                    <div class="grid-sort-icon-size-preserver" part="sort-default" slot="__content"></div>
+                    <svg class="grid-sort-icon _hide" viewBox="0 0 585.143 1024" slot="__content">
+                        <path d="m585.143,621.714c0,9.714 -4,18.857 -10.857,25.714l-256,256c-6.857,6.857 -16,10.857 -25.714,10.857s-18.857,-4 -25.714,-10.857l-256,-256c-6.857,-6.857 -10.857,-16 -10.857,-25.714c0,-20 16.571,-36.571 36.571,-36.571l512,0c20,0 36.571,16.571 36.571,36.571zm0,-219.428c0,20 -16.571,36.571 -36.571,36.571l-512,0c-20,0 -36.571,-16.571 -36.571,-36.571c0,-9.714 4,-18.857 10.857,-25.714l256,-256c6.857,-6.857 16,-10.857 25.714,-10.857s18.857,4 25.714,10.857l256,256c6.857,6.857 10.857,16 10.857,25.714z"></path>
+                    </svg>
+                </switch-binding>
+        </if-binding></div></span></div><div class="_header_cell _align_center" role="columnheader"><div class="bc-datatable-header">
+            <div class="bc-datatable-header-tooltip" data-tooltip="">
+                Links
+            </div>
+        </div></div></div><set-class class="row _grid_columns selected" role="row" target="." binding="this.rowClass"><div class="_cell selected" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags." target=".."></set-class><div class="text-center">
+                <i class="bc-glyph-plus bc-symbol-widgets-modal"></i>
+            </div></div><div class="_cell baseSymbol" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.baseSymbol" target=".."></set-class><a href="/stocks/quotes/ANVS/overview">
+                <set-property target=".." binding="this['baseSymbolLink']" property="href" style="display: none;"></set-property>
+                <text-binding binding="this.baseSymbol"></text-binding>
+            </a></div><div class="_cell _align_right underlyingLastPrice" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.underlyingLastPrice" target=".."></set-class><text-binding fallbackvalue=" " binding="this.underlyingLastPrice"></text-binding></div><div class="_cell strikePrice" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.strikePrice" target=".."></set-class><text-binding fallbackvalue=" " binding="this.strikePrice"></text-binding></div><div class="_cell _align_right moneyness down" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.moneyness" target=".."></set-class><text-binding fallbackvalue=" " binding="this.moneyness"></text-binding></div><div class="_cell expirationDate" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.expirationDate" target=".."></set-class><text-binding fallbackvalue=" " binding="this.expirationDate"></text-binding></div><div class="_cell _align_right bidPrice" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.bidPrice" target=".."></set-class><text-binding fallbackvalue=" " binding="this.bidPrice"></text-binding></div><div class="_cell _align_right breakEvenBid" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.breakEvenBid" target=".."></set-class><text-binding fallbackvalue=" " binding="this.breakEvenBid"></text-binding></div><div class="_cell _align_right breakEvenPercent up" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.breakEvenPercent" target=".."></set-class><text-binding fallbackvalue=" " binding="this.breakEvenPercent"></text-binding></div><div class="_cell _align_right volume" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.volume" target=".."></set-class><text-binding fallbackvalue=" " binding="this.volume"></text-binding></div><div class="_cell _align_right openInterest" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.openInterest" target=".."></set-class><text-binding fallbackvalue=" " binding="this.openInterest"></text-binding></div><div class="_cell _align_right volatility" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.volatility" target=".."></set-class><text-binding fallbackvalue=" " binding="this.volatility"></text-binding></div><div class="_cell _align_right delta" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.delta" target=".."></set-class><text-binding fallbackvalue=" " binding="this.delta"></text-binding></div><div class="_cell _align_right potentialReturn" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.potentialReturn" target=".."></set-class><text-binding fallbackvalue=" " binding="this.potentialReturn"></text-binding></div><div class="_cell _align_right potentialReturnAnnual" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.potentialReturnAnnual" target=".."></set-class><text-binding fallbackvalue=" " binding="this.potentialReturnAnnual"></text-binding></div><div class="_cell _align_right tradeTime" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags.tradeTime" target=".."></set-class><text-binding fallbackvalue=" " binding="this.tradeTime"></text-binding></div><div class="_cell _align_center" role="cell" draggable="true" tabindex="0"><set-class binding="this.flags." target=".."></set-class><div class="bc-datatable-quicklinks-toggler">
+                <i class="bc-glyph-ellipsis-v bc-datatable-quicklinks-toggler-open"></i>
+                <i class="bc-glyph-times bc-datatable-quicklinks-toggler-close"></i>
+            </div></div></set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class><set-class class="_placeholder_row _grid_columns">&nbsp;</set-class></div>
+<div> <link rel="stylesheet" type="text/css" href="https://assets.barchart.com/fonts/barfont.1575916154.css?1grtn8"> <link rel="stylesheet" id="sheet" href="https://assets.barchart.com/build/datatable-BGKIZF7I.css"> </div>
