@@ -14,3 +14,6 @@ Step 3:
 
 Step 4:
 * Display the stocks in the UI sorted by popularity.
+
+## Concerns:
+* Compatibility across multiple systems. Since the program opens a chrome window to get the barchart info, the resolution of the display matters.
