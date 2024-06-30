@@ -96,6 +96,10 @@ try:
         
         html_content = root.find_element(By.ID, "_grid").get_attribute("innerHTML")
 
+        # Save the html_content to a file
+        with open(f"shadow_root_2.html", "w") as file:
+            file.write(html_content)
+
         soup = BeautifulSoup(html_content, 'html.parser')
 
         # Iterate over each set-class element
@@ -107,10 +111,18 @@ try:
                 symbol = symbol.find('a')['href'].split('/')[-2]
                 # print(symbol)
 
-                # price = set_class.select_one('div[class="_cell _align_right underlyingLastPrice"]')
-                # if price:
+                def extract_shadow_root_content(driver, css_selector):
+                    element = driver.find_element(By.CSS_SELECTOR, css_selector)
+                    shadow_root = driver.execute_script('return arguments[0].shadowRoot', element)
+                    shadow_root_str = str(shadow_root)
+                    return shadow_root_str
+
+                price = set_class.select_one('div[class="_cell _align_right underlyingLastPrice"]')
+                if price:
                     # Need to extract text-binding which has a shadow root which contains the text we need
-                    
+                    print(extract_shadow_root_content(driver, price.select_one('text-binding')))
+
+
 
 except Exception as e:
     print(e)
